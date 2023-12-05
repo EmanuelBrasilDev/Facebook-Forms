@@ -1,0 +1,342 @@
+/* Define a fonte padrão para todo o documento */
+* {
+    font-family: sans-serif;
+}
+/* Estilos para o corpo da página */
+body {
+    background-color: #f0f2f5;
+}
+/* Container principal do formulário */
+#form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Estilo do logotipo do Facebook no formulário */
+#form-content img {
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+}
+/* Estilo do contêiner do formulário */
+#form-content #box-form {
+    height: 650px;
+    width: 430px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0.5px rgb(211, 208, 208);
+    margin-top: 50px;
+    text-align: center;
+}
+/* Estilo do título do formulário */
+#form-content #box-form h1 {
+    font-size: 25px;
+}
+/* Estilo do parágrafo introdutório do formulário */
+#form-content #box-form p {
+    font-size: 15px;
+    color: #606770;
+}
+/* Linha horizontal divisória no formulário */
+#form-content #box-form hr {
+    border: 1px solid #d3d5d8;
+}
+/* Estilo dos campos de entrada no formulário */
+#box-form input {
+    border: 1px solid rgb(194, 189, 189);
+    font-size: 15px;
+    transition: border-color 0.1s;
+    outline: none;
+    padding-left: 10px;
+}
+#box-form input:focus:invalid
+ {
+    border: 1px solid red;
+}
+#box-form input:required:valid {
+    border: 1px solid #ced4da;
+}
+/* Estilo do ícone de exclamação de erro ao lado dos campos inválidos */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+.icon-exclamation1 {
+    display: none;
+    color: #be4b49;
+    position: absolute;
+    right: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.icon-exclamation2 {
+    display: none;
+    color: #be4b49;
+    position: absolute;
+    right: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.icon-exclamation3 {
+    display: none;
+    color: #be4b49;
+    position: absolute;
+    right: 500px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+/* Estilo do tooltip */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #be4b49;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #ff9999;
+    border-radius: 5px;
+}
+.tooltip-1 {
+    margin-left: -125px;
+}
+
+.tooltip-2 {
+    margin-top: 100px;
+}
+.tooltip-3 {
+    margin-left: -345px;
+    margin-top: -35px;
+}
+.tooltip-4 {
+    margin-left: -300px;
+    margin-top: -45px;
+}
+.icon-exclamation1:hover ~ .tooltip-1,
+.icon-exclamation2:hover ~ .tooltip-2,
+.icon-exclamation3:hover ~ .tooltip-3,
+.icon-exclamation3:hover ~ .tooltip-4 {
+    display: block;
+}
+
+
+
+input:invalid ~ .icon-exclamation1,
+input:invalid ~ .icon-exclamation2,
+input:invalid ~ .icon-exclamation3 {
+    display: block;
+}
+
+input:valid + .icon-exclamation1,
+input:not(:focus) + .icon-exclamation1,
+input:valid + .icon-exclamation2,
+input:not(:focus) + .icon-exclamation2,
+input:valid + .icon-exclamation3,
+input:not(:focus) + .icon-exclamation3 {
+    display: none;
+}
+
+/* Estilo dos campos de nome, sobrenome e email no formulário */
+#form-content #box-form #name,
+#form-content #box-form #surname,
+#form-content #box-form #email {
+    height: 20px;
+    border-radius: 7px;
+}
+#form-content #box-form #name {
+    margin-left: 17px;
+    margin-top: 10px;
+    width: 170px;
+}
+#form-content #box-form #surname {
+    width: 180px;
+    margin-top: 10px;
+    padding-right: 0px;
+    margin-right: 15px;
+}
+#form-content #box-form #email {
+    display: block;
+    margin-top: 8px;
+    margin-left: 17px;
+    width: 380px;
+}
+#form-content #box-form label {
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    margin-left: 22px;
+    margin-top: 20px;
+    color: #606770;
+}
+/* Estilo dos menus de seleção de data de nascimento no formulário */
+#form-content #birth-date {
+    margin-top: 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 125px;
+    height: 38px;
+}
+/* Estilo do conteúdo de gênero no formulário */
+#form-content #gender-content {
+    display: flex;
+    flex-direction: row;
+}
+/* Estilo das opções de gênero no formulário */
+#form-content #gender {
+    height: 45px;
+    width: 100px;
+    display: flex;
+    border: 1px solid rgb(133, 130, 130);
+    border-radius: 5px;
+    outline: none;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-right: 25px;
+}
+/* Estilo dos rótulos de gênero no formulário */
+#form-content #gender label {
+    font-size: 15px;
+    color: black;
+    margin: auto;
+    margin-left: 10px;
+}
+/* Estilo dos botões de gênero no formulário */
+#form-content #gender #male-gender,
+#form-content #gender #feminine-gender{
+    margin-left: 30px;
+}
+/* Estilo do rótulo "Personalizado" para gênero no formulário */
+#form-content #gender #custom {
+    font-size: 14px;
+    color: black;
+}
+/* Estilo das informações adicionais no final do formulário */
+#form-content #end-form p {
+    font-size: 11px;
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+/* Estilo dos links nas informações adicionais no formulário */
+#form-content #end-form a {
+    color: rgb(26, 26, 248);
+    text-decoration: none;
+}
+/* Estilo dos links nas informações adicionais ao passar o mouse no formulário */
+#form-content #end-form a:hover {
+    text-decoration: underline;
+}
+/* Estilo do botão de criar conta no formulário */
+#box-form #create-acc {
+    margin-top: 3%;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    background-color: #00a400;
+    width: 180px;
+    color: #f0f2f5;
+    font-weight: bold;
+}
+/* Estilo do botão de criar conta ao passar o mouse no formulário */
+#box-form #create-acc:hover {
+    background: linear-gradient(#67ae55, #578843);
+}
+/* Estilo do link "Já tem uma conta?" no formulário */
+#form-content #end-box a {
+    color: #1877f2;
+    text-decoration: none;
+}
+/* Estilo do conteúdo do rodapé */
+#footer-content {
+    background-color: #ffffff;
+    text-align: center; /* Alinha o texto à direita */
+    padding-right: 250px;
+    width: 82%;
+    margin-top: 0px;
+}
+/* Estilo das opções de idioma no rodapé */
+#footer-content .language a {
+    color: #385898;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+/* Estilo das opções de idioma ao passar o mouse no rodapé */
+#footer-content .language a:hover {
+    text-decoration: underline;
+}
+/* Estilo do ícone de adição de idioma no rodapé */
+#footer-content .language i  {
+    cursor: pointer;
+}
+#footer-content .language  {
+    text-align: center;
+    padding-right: 235px;
+}
+/* Estilo do bloco de opções 1 no rodapé */
+#footer-content .options1 {
+    text-align: center;
+    padding-left: 4px;
+}
+/* Estilo do bloco de opções 2 no rodapé */
+#footer-content .options2  {
+    text-align: center;
+    padding-left: 95px;
+}
+/* Estilo do bloco de opções 3 no rodapé */
+#footer-content .options3 {
+    text-align: center;
+    padding-right: 66px;
+}
+/* Estilo dos links nas opções do rodapé */
+#footer-content .options1 a,
+#footer-content .options2 a,
+#footer-content .options3 a {
+    color: #385898;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+/* Estilo dos links nas opções do rodapé ao passar o mouse */
+#footer-content .options1 a:hover,
+#footer-content .options2 a:hover,
+#footer-content .options3 a:hover {
+    text-decoration: underline;
+}
+/* Estilo da linha horizontal no rodapé */
+#footer-content hr {
+    width: 121%;
+    border: 0.5px solid rgb(211, 205, 205);
+}
+/* Estilo do bloco de copyright no rodapé */
+#footer-copyright {
+    background-color: #ffffff;
+    padding-left: 106px;
+}
+/* Estilo dos links no bloco de copyright no rodapé */
+#footer-copyright a {
+    color: rgb(151, 147, 147);
+    text-decoration: none;
+    padding: 3px;
+    font-size: 14px;
+    cursor: text;
+}

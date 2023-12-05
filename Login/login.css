@@ -1,0 +1,203 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.half-page {
+    height: 100%;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#left-half {
+    background-color: #f0f2f5;
+}
+
+#right-half {
+    background-color: #f0f2f5;
+}
+#left-half img {
+    height: 50px;
+    margin-top: 195px;
+    margin-left: -10px;
+    
+}
+#left-half h2 {
+    width: 500px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #1c1e21;
+    margin-left: 195px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+#box-form {
+    height: 360px;
+    width: 400px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 18.5%;
+    margin-left: 110px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 0.5px rgb(211, 208, 208);
+    text-align: center;
+}
+#box-form input {
+    display: block;
+    border: 1.5px solid rgb(209, 204, 204);
+    font-size: 17px;
+    padding-left: 15px; 
+    transition: border-color 0.3s;
+    outline: none;
+}
+#box-form input:focus {
+    border-color: rgb(14, 86, 134);
+}
+#box-form #email {
+    margin-left: 5%;
+    margin-top: 0%;
+    width: calc(90% - 10px);
+    border-radius: 10px;
+    height: 50px;
+}
+#box-form #senha {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: calc(90% - 10px);
+    border-radius: 10px;
+    height: 50px;
+}
+#box-form #email:focus::placeholder,
+#box-form #senha:focus::placeholder {
+    color: rgb(185, 182, 182);
+}
+#box-form #login-acc {
+    width: calc(90% - 12px);
+    margin-top: 5%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1877f2;
+    font-weight: bold;
+    color: #f0f2f5;
+    font-size: 20px;
+    cursor: pointer;
+}
+#box-form #create-acc {
+    margin-top: 3%;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    background-color: #00a400;
+    width: 180px;
+    color: #f0f2f5;
+    font-weight: bold;
+}
+#box-form #create-acc:hover {
+    background-color: #086b08;
+}
+#box-form a {
+    color: #1877f2;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+#box-form a:hover {
+    text-decoration: underline;
+}
+#bellow-form {
+    display: inline;
+}
+#box-form hr {
+    border: 0.5px solid #d3d5d8;
+}
+#bellow-form a {
+    font-family: sans-serif;
+    color: #1c1e21;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#bellow-form a:hover {
+    text-decoration: underline;
+}
+#bellow-form p {
+    font-family: sans-serif;
+    color: #1c1e21;
+}
+#bellow-form a, #bellow-form b {
+    vertical-align: middle;
+}
+#footer-content {
+    background-color: #ffffff;
+    text-align: center; /* Alinha o texto à direita */
+    padding-right: 250px;
+    width: 82%;
+    margin-top: 0px;
+}
+#footer-content .language a {
+    color: rgb(151, 147, 147);
+    text-decoration: none;
+    padding: 3px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+#footer-content .language a:hover {
+    text-decoration: underline;
+}
+#footer-content .language i  {
+    cursor: pointer;
+}
+#footer-content .language  {
+    text-align: center;
+    padding-right: 235px;
+}
+#footer-content .options1 {
+    text-align: center;
+    padding-left: 4px;
+}
+#footer-content .options2  {
+    text-align: center;
+    padding-left: 95px;
+}
+#footer-content .options3 {
+    text-align: center;
+    padding-right: 66px;
+}
+#footer-content .options1 a,
+#footer-content .options2 a,
+#footer-content .options3 a {
+    color: rgb(151, 147, 147);
+    text-decoration: none;
+    padding: 6px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+#footer-content .options1 a:hover,
+#footer-content .options2 a:hover,
+#footer-content .options3 a:hover {
+    text-decoration: underline;
+}
+#footer-content hr {
+    width: 121%;
+    border: 0.5px solid rgb(211, 205, 205);
+}
+#footer-copyright {
+    background-color: #ffffff;
+    padding-left: 106px;
+}
+#footer-copyright a {
+    color: rgb(151, 147, 147);
+    text-decoration: none;
+    padding: 3px;
+    font-size: 14px;
+    cursor: text;
+}
+    

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se no Facebook | Facebook </title>
+    
+    <!-- Link da biblioteca de icons e do css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- Conteudo do formulario-->
+    <div id="form-content">
+        <img src="https://github.com/EmanuelBrasilDev/CursosDigital/blob/main/Form%20-%20Facebook/img/Facebook.png?raw=true" alt="Facebook">
+        <div id="box-form">
+            <h1>Criar uma nova conta</h1>
+            <p>É rápido e fácil.</p>
+            <hr>
+            <form action="" method="GET">
+                <!-- Formulario de nome, sobrenome, email e senha-->
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <input type="text" id="name" required placeholder="Nome">
+                        <i class="fa-solid fa-circle-exclamation icon-exclamation1"></i>
+                        <div id="tooltip-name" class="tooltip tooltip-1">Insira seu Nome</div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="sobrenome" required placeholder="Sobrenome" id="surname">
+                        <i class="fa-solid fa-circle-exclamation icon-exclamation2"></i>
+                        <div id="tooltip-surname" class="tooltip tooltip-2">Insira seu Sobrenome</div>
+                    </div>
+                </div>
+                <div class="input-container2">
+                    <div>
+                        <input type="text" name="email" required placeholder="Email ou Telefone" id="email">
+                        <i class="fa-solid fa-circle-exclamation icon-exclamation3"></i>
+                        <div id="tooltip-surname" class="tooltip tooltip-3">Você usará isso quando quando se conectar e precisar <br> redefinir senha</div>
+                    </div>
+                    <div>
+                        <input type="text" name="email" required placeholder="Nova senha" id="email">
+                        <i class="fa-solid fa-circle-exclamation icon-exclamation3"></i>
+                        <div id="tooltip-surname" class="tooltip tooltip-4">Insira uma combinação de pelo menos seis <br> números, letras, sinais de pontuação e símbolos <br>
+                        (como ! e &)</div>
+                    </div>
+                </div>
+                    
+                <!-- Formulario de nascimento-->
+                <label for="birthDate">Data de nacimento <i class="fa-solid fa-circle-question"></i></label>
+                <select name="dia" id="birth-date">
+                    <option value="day">1</option>
+                    <option value="day">2</option>
+                    <option value="day">3</option>
+                    <option value="day">4</option>
+                    <option value="day">5</option>
+                    <option value="day">6</option>
+                    <option value="day">7</option>
+                    <option value="day">8</option>
+                    <option value="day">9</option>
+                    <option value="day">10</option>
+                    <option value="day">11</option>
+                    <option value="day">12</option>
+                    <option value="day">13</option>
+                    <option value="day">14</option>
+                    <option value="day">15</option>
+                    <option value="day">16</option>
+                    <option value="day">17</option>
+                    <option value="day">18</option>
+                    <option value="day">19</option>
+                    <option value="day">20</option>
+                    <option value="day">21</option>
+                    <option value="day">22</option>
+                    <option value="day">23</option>
+                    <option value="day">24</option>
+                    <option value="day">25</option>
+                    <option value="day">26</option>
+                    <option value="day">27</option>
+                    <option value="day">28</option>
+                    <option value="day">29</option>
+                    <option value="day">30</option>
+                    <option value="day">31</option>
+                </select>
+                <select name="mês" id="birth-date">
+                    <option value="week">jan</option>
+                    <option value="week">fev</option>
+                    <option value="week">mar</option>
+                    <option value="week">abr</option>
+                    <option value="week">mai</option>
+                    <option value="week">jun</option>
+                    <option value="week">jul</option>
+                    <option value="week">ago</option>
+                    <option value="week">set</option>
+                    <option value="week">out</option>
+                    <option value="week">nov</option>
+                    <option value="week">dez</option>
+                </select>
+                <select name="ano" id="birth-date">
+                    <option value="year">2023</option>
+                    <option value="year">2022</option>
+                    <option value="year">2021</option>
+                    <option value="year">2020</option>
+                    <option value="year">2019</option>
+                    <option value="year">2018</option>
+                    <option value="year">2017</option>
+                    <option value="year">2016</option>
+                    <option value="year">2015</option>
+                    <option value="year">2014</option>
+                    <option value="year">2013</option>
+                    <option value="year">2012</option>
+                    <option value="year">2011</option>
+                    <option value="year">2010</option>
+                    <option value="year">2009</option>
+                    <option value="year">2008</option>
+                    <option value="year">2007</option>
+                    <option value="year">2006</option>
+                    <option value="year">2005</option>
+                    <option value="year">2004</option>
+                    <option value="year">2003</option>
+                    <option value="year">2002</option>
+                    <option value="year">2001</option>
+                    <option value="year">2000</option>
+                    <option value="year">1999</option>
+                    <option value="year">1998</option>
+                    <option value="year">1997</option>
+                    <option value="year">1996</option>
+                    <option value="year">1995</option>
+                    <option value="year">1994</option>
+                    <option value="year">1993</option>
+                    <option value="year">1992</option>
+                    <option value="year">1991</option>
+                    <option value="year">1990</option>
+                    <option value="year">1989</option>
+                    <option value="year">1988</option>
+                    <option value="year">1999</option>
+                    <option value="year">1998</option>
+                    <option value="year">1997</option>
+                    <option value="year">1996</option>
+                    <option value="year">1995</option>
+                    <option value="year">1994</option>
+                    <option value="year">1993</option>
+                    <option value="year">1992</option>
+                    <option value="year">1991</option>
+                    <option value="year">1990</option>
+                    <option value="year">1989</option>
+                    <option value="year">1988</option>
+                    <option value="year">1987</option>
+                    <option value="year">1986</option>
+                    <option value="year">1985</option>
+                    <option value="year">1984</option>
+                    <option value="year">1983</option>
+                    <option value="year">1982</option>
+                    <option value="year">1981</option>
+                    <option value="year">1980</option>
+                    <option value="year">1979</option>
+                    <option value="year">1978</option>
+                    <option value="year">1977</option>
+                    <option value="year">1976</option>
+                    <option value="year">1975</option>
+                    <option value="year">1974</option>
+                    <option value="year">1973</option>
+                    <option value="year">1972</option>
+                    <option value="year">1971</option>
+                    <option value="year">1970</option>
+                    <option value="year">1969</option>
+                    <option value="year">1968</option>
+                    <option value="year">1967</option>
+                    <option value="year">1966</option>
+                    <option value="year">1965</option>
+                    <option value="year">1964</option>
+                    <option value="year">1963</option>
+                    <option value="year">1962</option>
+                    <option value="year">1961</option>
+                    <option value="year">1960</option>
+                    <option value="year">1959</option>
+                    <option value="year">1958</option>
+                    <option value="year">1957</option>
+                    <option value="year">1956</option>
+                    <option value="year">1955</option>
+                    <option value="year">1954</option>
+                    <option value="year">1953</option>
+                    <option value="year">1952</option>
+                    <option value="year">1951</option>
+                    <option value="year">1950</option>
+                    <option value="year">1949</option>
+                    <option value="year">1948</option>
+                    <option value="year">1947</option>
+                    <option value="year">1946</option>
+                    <option value="year">1945</option>
+                    <option value="year">1944</option>
+                    <option value="year">1943</option>
+                    <option value="year">1942</option>
+                    <option value="year">1941</option>
+                    <option value="year">1940</option>
+                    <option value="year">1939</option>
+                    <option value="year">1938</option>
+                    <option value="year">1937</option>
+                    <option value="year">1936</option>
+                    <option value="year">1935</option>
+                    <option value="year">1934</option>
+                    <option value="year">1933</option>
+                    <option value="year">1932</option>
+                    <option value="year">1931</option>
+                    <option value="year">1930</option>
+                    <option value="year">1929</option>
+                    <option value="year">1928</option>
+                    <option value="year">1927</option>
+                    <option value="year">1926</option>
+                    <option value="year">1925</option>
+                    <option value="year">1924</option>
+                    <option value="year">1923</option>
+                    <option value="year">1922</option>
+                    <option value="year">1921</option>
+                    <option value="year">1920</option>
+                    <option value="year">1919</option>
+                    <option value="year">1918</option>
+                    <option value="year">1917</option>
+                    <option value="year">1916</option>
+                    <option value="year">1915</option>
+                    <option value="year">1914</option>
+                    <option value="year">1913</option>
+                    <option value="year">1912</option>
+                    <option value="year">1911</option>
+                    <option value="year">1910</option>
+                    <option value="year">1909</option>
+                    <option value="year">1908</option>
+                    <option value="year">1907</option>
+                    <option value="year">1906</option>
+                    <option value="year">1905</option>
+                </select>
+                <!-- Formulario de gênero-->
+                <label for="birthDate">Gênero <i class="fa-solid fa-circle-question"></i></label>
+                <div id="gender-content">
+                    <div id="gender">
+                        <label for="feminine-gender">Feminino</label>
+                        <input type="radio" id="feminine-gender" name="genero" value="feminino">
+                    </div>
+                    <div id="gender">
+                        <label for="male-gender">Maculino</label>
+                        <input type="radio" id="male-gender" name="genero" value="masculino">
+                    </div>
+                    <div id="gender">
+                        <label for="custom-gender" id="custom">Personalizado</label>
+                        <input type="radio" id="custom-gender" name="genero" value="outro">
+                    </div>
+                </div>
+                <!-- Conteudo apos o fim do formulario-->
+                <div id="end-form">
+                    <p>As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Facebook. 
+                        <a href="">saiba mais</a></p>
+                    <p>Ao clicar em Cadastre-se, você concorda com nossos 
+                        <a href=""> Termos, Política de Privacidade e Política de Cookies.</a> Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+                </div>
+               <!-- Botão de cadastro e link caso ja tenha uma conta-->
+                <div id="end-box">
+                    <button id="create-acc">Cadastre-se</button>
+                    <br><br>
+                    <a href="">Ja tem uma conta?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <!-- Conteudo do Rodapé-->
+    <footer class="footer">
+        <div id="footer-content">
+            <div class="language">
+                <a href="">Português (Brasil)</a>
+                <a href="">English (US)</a>
+                <a href="">Español</a>
+                <a href="">Français (France)</a>
+                <a href="">Italiano</a>
+                <a href="">Deutsch</a>
+                <a href="">العربية </a>
+                <a href="">हिन्दी </a>
+                <a href="">中文(简体) </a>
+                <a href="">日本語 </a>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <hr>
+            <div class="options1">
+                <br>
+                <a href="">Cadastre-se</a>
+                <a href="">Entrar</a>
+                <a href="">Messeger</a>
+                <a href="">Facebook Lite</a>
+                <a href="">Vídeo</a>
+                <a href="">Locais</a>
+                <a href="">Jogos</a>
+                <a href="">Marketplace</a>
+                <a href="">Metaplay</a>
+                <a href="">Loja da Meta</a>
+                <a href="">Meta Quest</a>
+                <a href="">Instagram</a>
+                <a href="">Threads</a>
+            </div>
+            
+            <div class="options2">
+                <a href="">Campanhas de arrecadação de fundos</a>
+                <a href="">Serviços</a>
+                <a href="">Central de Informações de Votação</a>
+                <a href="">Política de Privacidade</a>
+                <a href="">Central de Privacidade</a>
+                <a href="">Grupos</a>
+                <a href="">Sobre</a>
+                <a href="">Criar anúncio</a>
+            </div>
+            
+            <div class="options3">
+                <a href="">Criar Pagina</a>
+                <a href="">Desenvolvedores</a>
+                <a href="">Carreiras</a>
+                <a href="">Cookies</a>
+                <a href="">Escolha para anuncios <i class="fa-solid fa-circle-info"></i></a>
+                <a href="">Termos</a>
+                <a href="">Ajuda</a>
+                <a href="">Carregamento de contatos e não usuários</a>
+            </div>
+        </div>
+
+        <div id="footer-copyright">
+            <br><br>
+            <a href="">Meta &#169 2023</a>
+        </div>
+
+    </footer>
+</body>
+</html>
