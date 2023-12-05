@@ -18,7 +18,7 @@ O projeto de Registro é uma implementação dos formulários de cadastro do Fac
 ## Projeto de Login
 
 ### Descrição
-O projeto de Login é uma implementação dos formulários de login do Facebook, com foco no design.
+O projeto de Login é uma implementação dos formulários de login do Facebook
 
 ### Tecnologias
 - HTML
